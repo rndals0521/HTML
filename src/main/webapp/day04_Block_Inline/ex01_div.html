@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Block and Inline</title>
+</head>
+<body>
+	<!--
+		Block : 항상 새 줄에서 시작해서 전체 너비를 차지한다.
+				<div>, <p>, <pre>, <h1>~<h6>, <table>, <ul>, <ol>, <li>, <hr>
+				<header>, <section>, <nav>, <article>, <aside>,(html5구조=시멘틱스태그=의미있는태그)
+				<form>, <fieldset>
+	
+		Inline : 필요한 만큼만 너비를 차지한다.
+				 <span>, <a>, <br>, <img>, <button>, <b>, <i>, <strong>, <sub>, <sup>,
+				 <input>, <script>, <select>
+	  -->
+	  
+	  <!-- div : 다른 요소(Element=태그) 포함하는 컨테이너 역할을 한다. 
+	  			 또는 영역을 나누는 역할을 한다.
+	  -->
+	<div style="border: 1px solid green">대표적인 블록레벨</div>	  
+	<span style="border: 1px solid green">대표적인 인라인레벨</span>	  
+	<div style="background-color: pink; color:white; padding:5px; text-align:center;">
+		<h2>여기는 div 영역안입니다.</h2>
+		<p>	문재인 대통령이 오늘(26일) 청와대에서 여야 5당 대표 초청 오찬 간담회를 합니다.
+			더불어민주당 송영길 대표, 국민의힘 김기현 대표 권한대행 겸 원내대표, 정의당 여영국 대표, 국민의당 안철수 대표, 열린민주당 최강욱 대표가 참석합니다.
+			문 대통령은 이 자리에서 지난 21일 미국 워싱턴에서 열린 한미정상회담 결과를 공유하고 후속조치에 대한 협력을 요청할 예정입니다.
+			청와대는 한미 간 반도체 분야를 비롯한 산업 협력, 백신 협력, 한반도 평화 프로세스 협력 등이 간담회의 논의 주제가 될 것이라고 설명했습니다.
+		</p>
+	</div>
+	
+	<div style="background-color: lightgreen; color:white; width:500px; padding: 5px; text-align:center;">
+		<h2>여기는 div 영역안입니다.</h2>
+		<p>일단 다음달 1일부터 코로나19 백신 1차 접종자에 대해 직계가족 모임 인원 제한 대상에서 제외되고, 야외에서 마스크도 벗을 수 있게 됩니다.</p>		
+	</div>
+	
+	<div style="background-color: purple; color:white; width:500px; padding: 5px; text-align:center; margin: auto;">
+		<h2>여기는 div 영역안입니다.</h2>
+		<img alt="" src="../images/workplace.jpg">
+		
+	</div>	  
+	<img alt="" src="../images/workplace.jpg" style="margin-left: 240px;">
+</body>
+</html>

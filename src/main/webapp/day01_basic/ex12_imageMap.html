@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지맵 : 이미지 안에 여러개의 링크를 만드는 것</title>
+</head>
+<body>
+
+	<img alt="Workplace" src="../images/workplace.jpg" usemap="#workmap">
+	
+	<map name="workmap">
+		<area shape="rect" coords="34,44,370,450" alt="Computer" href="computer.htm">
+		<area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+	</map>
+	
+	<!-- 1. 해당 이미지에 usemap 속성부여 (map 태그에서 사용한 이름) -->
+	<a href="http://ictedu.co.kr"><img alt="이미지맵" src="../images/workplace.jpg" usemap="#imgmap"></a>
+	
+	<!-- 2. map 태그에 이름부여, area 태그 사용해서 영역지정 -->
+	<map name="imgmap">
+		<!-- 영역지정 : rect(사각형),circle(원),poly(다각형) -->
+		<!-- rect : 시작 x,y 끝 x,y -->
+		<area shape="rect" coords="35,45,270,350" href="https://google.com">
+		<area shape="rect" coords="290,170,335,248" href="ex01.html">
+		<!-- circle : 중심 x,y 반지름 -->
+		<area shape="circle" coords="340,300,50" href="https://www.starbucks.co.kr">
+		
+	</map>
+</body>
+</html>
